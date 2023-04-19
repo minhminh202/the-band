@@ -1,0 +1,91 @@
+/* PC: >= 1024px  @media(min-width: 1024px ) hoặc @media(min-width: 64em )
+    Tablet: >= 740px & <1024px @media(min-width: 740px) and (max-width: 1023px)
+    Tablet và Mobile: <1024px
+    Mobile: < 740px @media(max-width: 739px)
+*/
+/* PC  */
+@media(min-width: 64em ){
+
+}
+/* Tablet  */
+@media(min-width: 46.25em) and (max-width: 63.9375em){
+ /* đã có sự thay đổi code ở content, content-section
+        max-width: 100%;
+        padding-left: 16px;
+        padding-rigth: 16px;
+        ngoài ra có thể để thuộc tính ở main là
+        overflow: hidden; để thay thế cho việc padding
+ */
+}
+/*   Tablet và Mobile:  */
+@media(max-width: 63.9375em){
+    .btn{
+        padding: 15px 16px;
+    }
+    
+    .contact-info{
+       line-height: 2;
+    }
+    .contact-form .form-control{
+        padding: 15px;
+    }
+    .socials-list{
+        font-size: 48px;
+    }
+    .socials-list a{
+        margin: 0 8px;
+    }
+    .copyright a{
+        padding: 12px 0;
+        display: inline-block;
+    }
+}
+/* Mobile  */
+@media(max-width: 46.1875em){
+    .s-full-width{
+        width: 100%;
+    }
+    .s-col-ful{
+     width: 100% !important;
+    }
+    .s-mt-8{
+        margin-top: 8px !important;
+    }
+    #header{
+     overflow: hidden;
+    }
+    #header .mobile-menu-btn{
+     display: block;
+     /* hiện lên */
+    }
+    #header .search-btn{
+     display: none;
+    }
+    #nav{
+        display: block;
+    }
+    #nav > li{
+        display: block;
+       /* block thuộc tính inline-block để thành hàng 1 */
+   }
+   #nav > li:first-child{
+    display: inline-block;
+   }
+   #nav li a{
+    padding: 1px 24px;
+   }
+   #nav .subnav{
+    position: initial;
+    background-color: #333;
+   }
+   #nav .subnav a{
+    color: #fff;
+    padding: 5px 41px;
+   }
+   #content .member-img{
+    width: 60%;
+   }
+   .contact-form{
+    margin-top: 32px;
+   }
+}
